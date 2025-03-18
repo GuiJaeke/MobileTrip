@@ -5,8 +5,6 @@ const viagens = [
   { id: '1', destino: 'Rio de Janeiro', data: '12/04/2024' },
   { id: '2', destino: 'São Paulo', data: '18/05/2024' },
   { id: '3', destino: 'Salvador', data: '22/06/2024' },
-  { id: '4', destino: 'Florianópolis', data: '10/07/2024' },
-  { id: '5', destino: 'Curitiba', data: '30/08/2024' },
 ];
 
 const MinhasViagens = () => {
