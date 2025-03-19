@@ -1,5 +1,9 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const route = createStackNavigator()
 
 const viagens = [
   { id: '1', destino: 'Rio de Janeiro', data: '12/04/2024' },
@@ -7,7 +11,7 @@ const viagens = [
   { id: '3', destino: 'Salvador', data: '22/06/2024' },
 ];
 
-const MinhasViagens = () => {
+const MinhasViagens = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Minhas Viagens</Text>
@@ -15,10 +19,10 @@ const MinhasViagens = () => {
         data={viagens}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <View style={styles.viagemItem}>
+          <TouchableOpacity style={styles.viagemItem} onPress={() => navigation.navigate(`Viagens`)}>
             <Text style={styles.destino}>{item.destino}</Text>
             <Text style={styles.data}>Data: {item.data}</Text>
-          </View>
+          </TouchableOpacity>
         )}
       />
     </View>

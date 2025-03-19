@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
+import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const viagensFake = [
-  { id: '1', destino: 'Rio de Janeiro', data: '12/04/2024', imagem: require('../assets/rio.jpg') },
-  { id: '2', destino: 'londres', data: '18/05/2024', imagem: require('../assets/londres.jpg') },
-  { id: '3', destino: 'roma', data: '22/06/2024', imagem: require('../assets/roma.jpg') },
+  { id: '1', destino: 'Rio de Janeiro', data: '12/04/2024', valor: '800,00' ,imagem: require('../assets/rio.jpg') },
+  { id: '2', destino: 'Londres', data: '18/05/2024', valor: '2200,00' ,imagem: require('../assets/londres.jpg') },
+  { id: '3', destino: 'Roma', data: '22/06/2024',valor: '1500,00' , imagem: require('../assets/roma.jpg') },
 ];
 
 const Viagens = () => {
@@ -19,6 +19,8 @@ const Viagens = () => {
             <Image source={item.imagem} style={styles.imagem} />
             <Text style={styles.destino}>{item.destino}</Text>
             <Text style={styles.data}>Data: {item.data}</Text>
+            <Text style={styles.valor}>Valor: R${item.valor}</Text>
+            <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Comprar</Text></TouchableOpacity>
           </View>
         )}
       />
@@ -63,6 +65,22 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#555',
   },
+  valor: {
+    fontSize: 16,
+    color: 'green',
+  },
+  button: {
+    fontSize: 16,
+    backgroundColor: 'lightblue',
+    padding:10,
+    borderRadius:5,
+    width: '100%',
+  },
+  buttonText: {
+    textAlign: 'center',
+    fontWeight:'bold',
+    fontSize: 18
+  }
 });
 
 export default Viagens;
