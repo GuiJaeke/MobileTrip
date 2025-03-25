@@ -21,7 +21,7 @@ const Rotas = () => {
 
             <tab.Screen
                 name="Home"
-                component={Home}
+                component={Viagens}
                 options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: ({ color, size }) => (
@@ -42,12 +42,12 @@ const Rotas = () => {
             />
 
             <tab.Screen
-                name="Viagens"
+                name="Conta"
                 component={Viagens}
                 options={{
-                    tabBarLabel: 'Viagens',
+                    tabBarLabel: 'Minha conta',
                     tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons name="earth" color={color} size={size} />
+                        <MaterialCommunityIcons name="account-circle" color={color} size={size} />
                     ),
                 }}
             />
