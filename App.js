@@ -1,20 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import MinhasViagens from './components/MinhasViagens'
-import Viagens from './components/viagens.js'
-import Home from './components/home';
+// import MinhasViagens from './components/MinhasViagens'
+// import Viagens from './components/viagens.js'
+// import Home from './components/home';
 
-const route = createStackNavigator()
+import Rotas from './components/Rotas';
+
+// const route = createStackNavigator()
 
 export default function App() {
   return (
     <NavigationContainer>
-      <route.Navigator initialRouteName="Home">
-        <route.Screen name="Home" component={Home} />
-        <route.Screen name="MinhasViagens" component={MinhasViagens} />
-        <route.Screen name="Viagens" component={Viagens} />
-      </route.Navigator>
+
+        <Rotas/>
+
     </NavigationContainer>
   );
 }
