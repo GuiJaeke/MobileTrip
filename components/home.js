@@ -7,11 +7,11 @@ const Home = ({ navigation }) => {
       <View style={styles.overlay}>
         <Text style={styles.title}>Bem-vindo ao App de Viagens!</Text>
 
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('MinhasViagens')}>
+        {/* <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('MinhasViagens')}>
           <Text style={styles.buttonText}>Minhas Viagens</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Viagens')}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('login')}>
           <Text style={styles.buttonText}>Ver Viagens</Text>
         </TouchableOpacity>
       </View>

@@ -7,6 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Home from './home';
 import MinhasViagens from './MinhasViagens';
 import Viagens from './viagens';
+import Login from './login';
 
 const tab = createBottomTabNavigator();
 
@@ -43,7 +44,7 @@ const Rotas = () => {
 
             <tab.Screen
                 name="Conta"
-                component={Viagens}
+                component={Login}
                 options={{
                     tabBarLabel: 'Minha conta',
                     tabBarIcon: ({ color, size }) => (
