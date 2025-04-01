@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const viagensFake = [
-  { id: '1', destino: 'Rio de Janeiro', data: '12/04/2024', valor: '800,00' ,imagem: require('../assets/rio.jpg') },
-  { id: '2', destino: 'Londres', data: '18/05/2024', valor: '2200,00' ,imagem: require('../assets/londres.jpg') },
-  { id: '3', destino: 'Roma', data: '22/06/2024',valor: '1500,00' , imagem: require('../assets/roma.jpg') },
+  { id: '1', destino: 'Rio de Janeiro', data: '12/04/2024', valor: '800,00' ,imagem: require('../../assets/rio.jpg') },
+  { id: '2', destino: 'Londres', data: '18/05/2024', valor: '2200,00' ,imagem: require('../../assets/londres.jpg') },
+  { id: '3', destino: 'Roma', data: '22/06/2024',valor: '1500,00' , imagem: require('../../assets/roma.jpg') },
 ];
 
 const Viagens = () => {

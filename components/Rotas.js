@@ -3,11 +3,9 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
-import Home from './home';
-import MinhasViagens from './MinhasViagens';
-import Viagens from './viagens';
-import Login from './login';
+import MinhasViagens from './viagem/MinhasViagens';
+import Viagens from './viagem/viagens';
+import Login from './account/Login';
 
 const tab = createBottomTabNavigator();
 
