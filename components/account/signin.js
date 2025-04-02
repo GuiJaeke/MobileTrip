@@ -17,21 +17,34 @@ const SignIn = ({ navigation }) => {
     return (
 
         <View style={styles.container}>
+            
 
+            
             <Text style={styles.title}>Login</Text>
-            <TextInput
-                style={styles.input}
-                value={name}
-                onChangeText={setName}
-            />
-            <Text style={styles.title}>Senha</Text>
-            <TextInput
-                style={styles.input}
-                value={Senha}
-                onChangeText={setSenha}
-            />
-             <Text style={styles.textLinkCadastro} onPress={vaiParaCadastro}>Cadastrar uma conta</Text>
-            <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Entrar</Text></TouchableOpacity>
+            
+                <View style={styles.decoration}>
+
+                <View style={styles.alinhamento}>
+                    <TextInput
+                        style={styles.input}
+                        value={name}
+                        onChangeText={setName}
+                    />
+
+                    <Text style={styles.title}>Senha</Text>
+
+                    <TextInput
+                        style={styles.input}
+                        value={Senha}
+                        onChangeText={setSenha}
+                    />
+
+                    <Text style={styles.textLinkCadastro} onPress={vaiParaCadastro}>Cadastrar uma conta</Text>
+                    
+                    <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Entrar</Text></TouchableOpacity> 
+
+                </View>
+                </View>        
         </View>
 
     );
@@ -41,13 +54,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#A3CDFF',
         alignItems: 'center',
         justifyContent: 'center',
-        marginVertical: '30%'
+        // marginVertical: '%'
     },
     input: {
-        width: '100%',
+        width: '70%',
         minHeight: ' 5%',
         borderColor: '#ccc',
         borderWidth: 1,
@@ -56,6 +69,9 @@ const styles = StyleSheet.create({
         borderRadius: 3,
         backgroundColor: '#fff',
         color: 'grey',
+        alignItems: 'center',
+        display: 'flex',
+
     },
     title: {
         display: 'flex',
@@ -69,7 +85,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'lightblue',
         padding: 10,
         borderRadius: 5,
-        width: '100%',
+        width: '50%',
         margin: 'auto',
     },
     buttonText: {
@@ -83,8 +99,24 @@ const styles = StyleSheet.create({
         marginLeft: 5,
         fontSize: 15,
         color: "#FFBB12",
-        textDecorationLine: "underline"
+        textDecorationLine: "underline",
+
       },
+      decoration: {
+        backgroundColor: "blue",
+        width: 650,
+        height: 650,
+        borderRadius: '100%',
+        marginRight: 300,
+
+      },
+      alinhamento: {
+        display: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        // flexDirection: 'column',
+        marginLeft: 300,
+      }
 })
 
 export default SignIn

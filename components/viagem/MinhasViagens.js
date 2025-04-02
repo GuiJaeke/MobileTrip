@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -25,6 +25,9 @@ const MinhasViagens = ({navigation}) => {
           </TouchableOpacity>
         )}
       />
+      <TouchableOpacity style={styles.butt}>
+      <Text>Ver mais</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -33,7 +36,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#A3CDFF',
   },
   title: {
     fontSize: 22,
@@ -58,6 +61,17 @@ const styles = StyleSheet.create({
   data: {
     fontSize: 16,
     color: '#555',
+  },
+  botaomais: {
+    height: 12,
+    width: 10,
+  },  
+  button: {
+    fontSize: 16,
+    backgroundColor: 'lightblue',
+    padding:10,
+    borderRadius:5,
+    width: '100%',
   },
 });
 

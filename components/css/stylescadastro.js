@@ -2,16 +2,16 @@ import {StyleSheet} from "react-native";
 
 
 const styles = StyleSheet.create({
-  telaPrincipal:{
-    paddingRight: 20,
-    paddingLeft: 20,
-  },
-  label: {
-    fontWeight: "bold",
-    fontFamily: "arial",
-    color: "#464237",
-    fontSize: 20,
-  },
+  // telaPrincipal:{
+  //   paddingRight: 20,
+  //   paddingLeft: 20,
+  // },
+  // label: {
+  //   fontWeight: "bold",
+  //   fontFamily: "arial",
+  //   color: "#464237",
+  //   fontSize: 20,
+  // },
   inputs: {
     borderWidth: 1, // Sempre mantém a borda visível
     borderColor: "#D2CEC5",

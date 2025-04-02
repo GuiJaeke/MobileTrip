@@ -1,4 +1,4 @@
-import {View, StyleSheet, Button, TextInput, Text, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Button, TextInput, Text, TouchableOpacity, ScrollView} from 'react-native';
 import {useState, useEffect} from "react";
 import React from "react";
 import { InputNome, InputEmail, InputSenha, InputNumero, InputRua, InputCidade } from './cadastro/input.js';

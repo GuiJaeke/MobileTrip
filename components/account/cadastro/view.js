@@ -45,17 +45,18 @@ export function BotaoCadastro() {
 
 export function ViewTitulo () {
   return(
-    <View style={styles.viewContainerTitulo}>
-    <View style={styles.titulo}>
-      <View style={styles.iconeQuadrado}></View>
-      <Text style={styles.textTitulo}>Inscreva-se</Text>
-    </View>
-     <View style={styles.iconeMenu}>
-      <Text style={styles.topLine}>___</Text>
-      <Text style={styles.midLine}> __</Text>
-      <Text style={styles.bottomLine}>___</Text>
-     </View>
-    </View>
+
+      <View style={styles.viewContainerTitulo}>
+        {/* // <View style={styles.titulo}>
+        //   <View style={styles.iconeQuadrado}></View>
+        //   <Text style={styles.textTitulo}>Inscreva-se</Text>
+        // </View> */}
+      <View style={styles.iconeMenu}>
+          <Text style={styles.topLine}>___</Text>
+          <Text style={styles.midLine}> __</Text>
+          <Text style={styles.bottomLine}>___</Text>
+      </View>
+      </View>
   )
 }
 export function ViewLinha () {
@@ -75,8 +76,11 @@ export function ViewBotaoCadastro ({children}) {
 }
 
 const styles = StyleSheet.create({
+  background: {
+    backgroundColor: '#313AEE'
+  },
   viewContainerNomeEmailSenha: {
-    backgroundColor: "#FFFFFF",
+    // backgroundColor: "#313AEE",
     width: "auto",
     height: "auto",
     paddingLeft: 16,
@@ -84,7 +88,7 @@ const styles = StyleSheet.create({
     paddingTop: 16,
   },
   viewContainerCepNum: {
-    backgroundColor: "#FFFFFF",
+    // backgroundColor: "#313AEE",
     width: "auto",
     height: "auto",
     paddingLeft: 16,
@@ -92,14 +96,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   viewContainerRuaCidade: {
-    backgroundColor: "#FFFFFF",
+    // backgroundColor: "#FFFFFF",
     width: "auto",
     height: "auto",
     paddingLeft: 16,
     paddingRight: 16,
   },
   viewContainerCheckBox: {
-    backgroundColor: "#FFFFFF",
+    // backgroundColor: "#FFFFFF",
     width: "auto",
     height: 42,
     paddingTop: 12,
@@ -111,7 +115,7 @@ const styles = StyleSheet.create({
     marginRight: 12,
   },
   viewContainerBotaoCadastro: {
-    backgroundColor: "#FFFFFF",
+    // backgroundColor: "#FFFFFF",
     height: 80,
     flexDirection: "row",
     display: "flex",
