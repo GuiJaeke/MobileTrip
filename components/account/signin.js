@@ -25,13 +25,14 @@ const SignIn = ({ navigation }) => {
                 <View style={styles.decoration}>
 
                 <View style={styles.alinhamento}>
+                    <Text style={styles.label}>Usuário</Text>
                     <TextInput
                         style={styles.input}
                         value={name}
                         onChangeText={setName}
                     />
 
-                    <Text style={styles.title}>Senha</Text>
+                    <Text style={styles.label}>Senha</Text>
 
                     <TextInput
                         style={styles.input}
@@ -75,6 +76,18 @@ const styles = StyleSheet.create({
     },
     title: {
         display: 'flex',
+        fontSize: 36,
+        fontWeight: 'bold',
+        marginBottom: 15,
+        textAlign: 'center',
+        backgroundColor: '#132166',
+        paddingVertical: 10,
+        paddingHorizontal: 80,
+        borderRadius: 5,
+        color: '#A3CDFF'
+    },
+    label: {
+        display: 'flex',
         fontSize: 22,
         fontWeight: 'bold',
         marginBottom: 15,
@@ -114,8 +127,9 @@ const styles = StyleSheet.create({
         display: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        // flexDirection: 'column',
-        marginLeft: 300,
+        marginLeft: '300',
+        marginVertical: 'auto'
+        
       }
 })
 
